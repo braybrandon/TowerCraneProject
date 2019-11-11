@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B32FF03C2378B42B005498FA /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FF03B2378B42B005498FA /* art.scnassets */; };
+		B32FF0402378EAD2005498FA /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32FF03F2378EAD2005498FA /* BluetoothViewController.swift */; };
+		B3775687235BF939001F3BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3775686235BF939001F3BCD /* AppDelegate.swift */; };
+		B3775689235BF939001F3BCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3775688235BF939001F3BCD /* SceneDelegate.swift */; };
+		B377568B235BF939001F3BCD /* ManualControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B377568A235BF939001F3BCD /* ManualControlViewController.swift */; };
+		B377568E235BF939001F3BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B377568C235BF939001F3BCD /* Main.storyboard */; };
+		B3775690235BF93A001F3BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B377568F235BF93A001F3BCD /* Assets.xcassets */; };
+		B3775693235BF93A001F3BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3775691235BF93A001F3BCD /* LaunchScreen.storyboard */; };
+		B3DBEB5523787A490048EEEC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBEB5423787A490048EEEC /* MainViewController.swift */; };
+		B3DBEB5723788B880048EEEC /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBEB5623788B880048EEEC /* Simulator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B32FF03B2378B42B005498FA /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B32FF03F2378EAD2005498FA /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothViewController.swift; path = ../../../.Trash/BluetoothViewController.swift; sourceTree = "<group>"; };
+		B3775683235BF939001F3BCD /* Tower_Crane_Bluetooth_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tower_Crane_Bluetooth_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3775686235BF939001F3BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3775688235BF939001F3BCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B377568A235BF939001F3BCD /* ManualControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualControlViewController.swift; sourceTree = "<group>"; };
+		B377568D235BF939001F3BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B377568F235BF93A001F3BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3775692235BF93A001F3BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3775694235BF93A001F3BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DBEB5423787A490048EEEC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3DBEB5623788B880048EEEC /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3775680235BF939001F3BCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B377567A235BF939001F3BCD = {
+			isa = PBXGroup;
+			children = (
+				B3775685235BF939001F3BCD /* Tower_Crane_Bluetooth_APP */,
+				B3775684235BF939001F3BCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3775684235BF939001F3BCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3775683235BF939001F3BCD /* Tower_Crane_Bluetooth_APP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3775685235BF939001F3BCD /* Tower_Crane_Bluetooth_APP */ = {
+			isa = PBXGroup;
+			children = (
+				B3775686235BF939001F3BCD /* AppDelegate.swift */,
+				B3DBEB5623788B880048EEEC /* Simulator.swift */,
+				B3775688235BF939001F3BCD /* SceneDelegate.swift */,
+				B377568A235BF939001F3BCD /* ManualControlViewController.swift */,
+				B3DBEB5423787A490048EEEC /* MainViewController.swift */,
+				B32FF03F2378EAD2005498FA /* BluetoothViewController.swift */,
+				B377568C235BF939001F3BCD /* Main.storyboard */,
+				B377568F235BF93A001F3BCD /* Assets.xcassets */,
+				B3775691235BF93A001F3BCD /* LaunchScreen.storyboard */,
+				B3775694235BF93A001F3BCD /* Info.plist */,
+				B32FF03B2378B42B005498FA /* art.scnassets */,
+			);
+			path = Tower_Crane_Bluetooth_APP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3775682235BF939001F3BCD /* Tower_Crane_Bluetooth_APP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3775697235BF93A001F3BCD /* Build configuration list for PBXNativeTarget "Tower_Crane_Bluetooth_APP" */;
+			buildPhases = (
+				B377567F235BF939001F3BCD /* Sources */,
+				B3775680235BF939001F3BCD /* Frameworks */,
+				B3775681235BF939001F3BCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tower_Crane_Bluetooth_APP;
+			productName = Tower_Crane_Bluetooth_APP;
+			productReference = B3775683235BF939001F3BCD /* Tower_Crane_Bluetooth_APP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B377567B235BF939001F3BCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Brandon Bray";
+				TargetAttributes = {
+					B3775682235BF939001F3BCD = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = B377567E235BF939001F3BCD /* Build configuration list for PBXProject "Tower_Crane_Bluetooth_APP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B377567A235BF939001F3BCD;
+			productRefGroup = B3775684235BF939001F3BCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3775682235BF939001F3BCD /* Tower_Crane_Bluetooth_APP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3775681235BF939001F3BCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32FF03C2378B42B005498FA /* art.scnassets in Resources */,
+				B3775693235BF93A001F3BCD /* LaunchScreen.storyboard in Resources */,
+				B3775690235BF93A001F3BCD /* Assets.xcassets in Resources */,
+				B377568E235BF939001F3BCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B377567F235BF939001F3BCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B377568B235BF939001F3BCD /* ManualControlViewController.swift in Sources */,
+				B3DBEB5723788B880048EEEC /* Simulator.swift in Sources */,
+				B3775687235BF939001F3BCD /* AppDelegate.swift in Sources */,
+				B32FF0402378EAD2005498FA /* BluetoothViewController.swift in Sources */,
+				B3775689235BF939001F3BCD /* SceneDelegate.swift in Sources */,
+				B3DBEB5523787A490048EEEC /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B377568C235BF939001F3BCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B377568D235BF939001F3BCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3775691235BF93A001F3BCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3775692235BF93A001F3BCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3775695235BF93A001F3BCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3775696235BF93A001F3BCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3775698235BF93A001F3BCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69648L2S9V;
+				INFOPLIST_FILE = Tower_Crane_Bluetooth_APP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon.Tower-Crane-Bluetooth-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3775699235BF93A001F3BCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69648L2S9V;
+				INFOPLIST_FILE = Tower_Crane_Bluetooth_APP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandon.Tower-Crane-Bluetooth-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B377567E235BF939001F3BCD /* Build configuration list for PBXProject "Tower_Crane_Bluetooth_APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3775695235BF93A001F3BCD /* Debug */,
+				B3775696235BF93A001F3BCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3775697235BF93A001F3BCD /* Build configuration list for PBXNativeTarget "Tower_Crane_Bluetooth_APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3775698235BF93A001F3BCD /* Debug */,
+				B3775699235BF93A001F3BCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B377567B235BF939001F3BCD /* Project object */;
+}
