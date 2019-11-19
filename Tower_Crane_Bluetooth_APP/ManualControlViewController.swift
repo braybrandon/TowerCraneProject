@@ -11,44 +11,62 @@ import CoreBluetooth
 
 class ManualControlViewController: UIViewController {
     
-    var centralManager: CBCentralManager!
-    var connectedPeripheral: CBPeripheral!
-    var writeCharacteristics: CBCharacteristic!
+    var bluetooth: Bluetooth!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if writeCharacteristics != nil {
-            print("\(writeCharacteristics.uuid)")
-        }
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
- 
-    @IBAction func LightOFF(_ sender: UIButton) {
+    
+    @IBAction func rotateCraneLeft(_ sender: UIButton) {
         let string = "0"
-                 let data = string.data(using: String.Encoding.utf8)!
+        let data = string.data(using: String.Encoding.utf8)!
         print(data)
-                 connectedPeripheral.writeValue(data, for: writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
     }
- 
-    @IBAction func LightOn(_ sender: UIButton) {
+    
+    @IBAction func rotateCraneRight(_ sender: UIButton) {
         let string = "1"
-                 let data = string.data(using: String.Encoding.utf8)!
+        let data = string.data(using: String.Encoding.utf8)!
         print(data)
-                 connectedPeripheral.writeValue(data, for: writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
     }
+    @IBAction func magnetUp(_ sender: UIButton) {
+        let string = "2"
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+    }
+    
+    @IBAction func magnetDown(_ sender: UIButton) {
+        let string = "3"
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+    }
+    
+    @IBAction func magnetOn(_ sender: UIButton) {
+        let string = "4"
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+    }
+    
+    @IBAction func magnetOff(_ sender: UIButton) {
+        let string = "5"
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is MainViewController
         {
             let vc = segue.destination as? MainViewController
-            vc?.centralManager = centralManager
-            vc?.connectedPeripheral = connectedPeripheral
-            vc?.writeCharacteristics = writeCharacteristics
-            if writeCharacteristics != nil {
-                vc?.enableControllers = true
-            }
+            vc?.bluetooth = bluetooth
         }
     }
 }

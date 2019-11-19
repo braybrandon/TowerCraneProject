@@ -9,42 +9,56 @@
 import UIKit
 import CoreBluetooth
 
-class MainViewController: UIViewController {
-
-     var centralManager: CBCentralManager!
-     var connectedPeripheral: CBPeripheral!
-     var writeCharacteristics: CBCharacteristic!
-     var enableControllers = false
-
+class MainViewController: UIViewController, BluetoothDelegate {
+    
+    var bluetooth: Bluetooth!
+    @IBOutlet weak var SimulatorButton: UIButton!
     @IBOutlet weak var manualControlButton: UIButton!
+    @IBOutlet weak var connectionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        manualControlButton.isEnabled = enableControllers
-        if writeCharacteristics != nil {
-            print("\(writeCharacteristics.uuid)")
+        manualControlButton.setTitleColor(UIColor.black, for: .disabled)
+        SimulatorButton.setTitleColor(UIColor.black, for: .disabled)
+        
+        if bluetooth == nil {
+            bluetooth = Bluetooth()
         }
+        bluetooth.delegate = self
+        if  bluetooth.connected {
+            manualControlButton.isEnabled = true
+            SimulatorButton.isEnabled = true
+        }
+        else{
+            manualControlButton.isEnabled = false
+            SimulatorButton.isEnabled = false
+        }
+    }
+    @IBAction func connectBluetooth(_ sender: UIButton) {
+        bluetooth.scanForBLEDevice()
+    }
+    
+    func bluetoothConnected(_ connected: Bool) {
+        manualControlButton.isEnabled = true
+        SimulatorButton.isEnabled = true
+        connectionLabel.text = "Connected"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is ManualControlViewController
         {
             let vc = segue.destination as? ManualControlViewController
-            vc?.centralManager = centralManager
-            vc?.connectedPeripheral = connectedPeripheral
-            vc?.writeCharacteristics = writeCharacteristics
+            vc?.bluetooth = bluetooth
         }
         if segue.destination is Simulator
         {
             let vc = segue.destination as? Simulator
-            vc?.centralManager = centralManager
-            vc?.connectedPeripheral = connectedPeripheral
-            vc?.writeCharacteristics = writeCharacteristics
-            let string = "2"
-                     let data = string.data(using: String.Encoding.utf8)!
+            vc?.bluetooth = bluetooth
+            let string = "a"
+            let data = string.data(using: String.Encoding.utf8)!
             print(data)
-                     connectedPeripheral.writeValue(data, for: writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+            bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
         }
     }
-
+    
 }

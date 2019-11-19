@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30B12572383820A00D21B01 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B12562383820A00D21B01 /* Bluetooth.swift */; };
+		B30B12592383967F00D21B01 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B12582383967F00D21B01 /* BluetoothDelegate.swift */; };
 		B32FF03C2378B42B005498FA /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FF03B2378B42B005498FA /* art.scnassets */; };
-		B32FF0402378EAD2005498FA /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32FF03F2378EAD2005498FA /* BluetoothViewController.swift */; };
 		B3775687235BF939001F3BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3775686235BF939001F3BCD /* AppDelegate.swift */; };
 		B3775689235BF939001F3BCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3775688235BF939001F3BCD /* SceneDelegate.swift */; };
 		B377568B235BF939001F3BCD /* ManualControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B377568A235BF939001F3BCD /* ManualControlViewController.swift */; };
@@ -20,8 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B30B12562383820A00D21B01 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		B30B12582383967F00D21B01 /* BluetoothDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
 		B32FF03B2378B42B005498FA /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		B32FF03F2378EAD2005498FA /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothViewController.swift; path = ../../../.Trash/BluetoothViewController.swift; sourceTree = "<group>"; };
 		B3775683235BF939001F3BCD /* Tower_Crane_Bluetooth_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tower_Crane_Bluetooth_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3775686235BF939001F3BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3775688235BF939001F3BCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,12 +71,13 @@
 				B3775688235BF939001F3BCD /* SceneDelegate.swift */,
 				B377568A235BF939001F3BCD /* ManualControlViewController.swift */,
 				B3DBEB5423787A490048EEEC /* MainViewController.swift */,
-				B32FF03F2378EAD2005498FA /* BluetoothViewController.swift */,
 				B377568C235BF939001F3BCD /* Main.storyboard */,
+				B30B12562383820A00D21B01 /* Bluetooth.swift */,
 				B377568F235BF93A001F3BCD /* Assets.xcassets */,
 				B3775691235BF93A001F3BCD /* LaunchScreen.storyboard */,
 				B3775694235BF93A001F3BCD /* Info.plist */,
 				B32FF03B2378B42B005498FA /* art.scnassets */,
+				B30B12582383967F00D21B01 /* BluetoothDelegate.swift */,
 			);
 			path = Tower_Crane_Bluetooth_APP;
 			sourceTree = "<group>";
@@ -154,9 +157,10 @@
 				B377568B235BF939001F3BCD /* ManualControlViewController.swift in Sources */,
 				B3DBEB5723788B880048EEEC /* Simulator.swift in Sources */,
 				B3775687235BF939001F3BCD /* AppDelegate.swift in Sources */,
-				B32FF0402378EAD2005498FA /* BluetoothViewController.swift in Sources */,
 				B3775689235BF939001F3BCD /* SceneDelegate.swift in Sources */,
 				B3DBEB5523787A490048EEEC /* MainViewController.swift in Sources */,
+				B30B12572383820A00D21B01 /* Bluetooth.swift in Sources */,
+				B30B12592383967F00D21B01 /* BluetoothDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

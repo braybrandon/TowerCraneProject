@@ -7,54 +7,63 @@
 //
 
 import SceneKit
+import SpriteKit
 import CoreBluetooth
 
 class Simulator: UIViewController, CBPeripheralDelegate, SCNSceneRendererDelegate {
     
+    @IBOutlet weak var simulationView: SCNView!
+    
     var scene: SCNScene!
-    var externalview: UIView!
-    var sceneView: SCNView!
-    var towerNode = SCNNode()
-    var cameraNode = SCNNode()
-    var rotateAnimation: CAAnimation!
+    var bluetooth: Bluetooth!
     
-    var centralManager: CBCentralManager!
-    var connectedPeripheral: CBPeripheral!
-    var writeCharacteristics: CBCharacteristic!
-    
+    @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var currentStep: UILabel!
+    @IBOutlet weak var magnet: UILabel!
     
     override func viewDidLoad() {
-        connectedPeripheral.delegate = self
+        bluetooth.connectedPeripheral.delegate = self
         super.viewDidLoad()
-        sceneView = SCNView()
-        sceneView.delegate = self
-        externalview = UIView()
-        externalview = self.view
-        self.view!.backgroundColor = UIColor.gray
         scene = SCNScene(named: "art.scnassets/TowerCraneAnimation.dae")
-        sceneView.scene = scene
-        self.view = sceneView
+        simulationView.backgroundColor = UIColor.gray
+        simulationView.present(scene, with: .fade(withDuration: 0.1), incomingPointOfView: nil, completionHandler: nil)
+        
     }
     
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteric: CBCharacteristic, error: Error?) {
-          let data = characteric.value
+        let data = characteric.value
         let str = String(decoding: data!, as: UTF8.self)
-        print(str)
-            self.view = externalview
-          }
+        switch str {
+        case "C":
+            statusLabel.text = "Crane Operation Complete"
+            break
+        case "R":
+            currentStep.text = "Rotating Right"
+            break
+        case "L":
+            currentStep.text = "Rotating Left"
+            break
+        case "D":
+            currentStep.text = "Dropping Magnet"
+            break
+        case "U":
+            currentStep.text = "Raising Magnet"
+            break
+        case "M":
+            magnet.text = "Magnet ON!"
+            break
+        default:
+            break
+        }
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is MainViewController
         {
             let vc = segue.destination as? MainViewController
-            vc?.centralManager = centralManager
-            vc?.connectedPeripheral = connectedPeripheral
-            vc?.writeCharacteristics = writeCharacteristics
-            if writeCharacteristics != nil {
-                vc?.enableControllers = true
-            }
+            vc?.bluetooth = bluetooth
         }
     }
     

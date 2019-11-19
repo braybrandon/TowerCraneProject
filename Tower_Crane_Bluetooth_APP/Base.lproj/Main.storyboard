@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hu3-I5-KTw">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,65 +15,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVL-dq-W4i">
-                                <rect key="frame" x="142" y="310" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-M7-lm0">
+                                <rect key="frame" x="157" y="93.5" width="100" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Hook Down" backgroundImage="tm9debwp5f301-3">
-                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-M7-lm0">
-                                <rect key="frame" x="142" y="94" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="Crane Up" backgroundImage="tm9debwp5f301-1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VID-qr-uCM">
-                                <rect key="frame" x="64" y="202" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="OFF" backgroundImage="tm9debwp5f301-2">
+                                <state key="normal" title="CraneUp" backgroundImage="arrow.up.circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="LightOFF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qk-AE-gcI"/>
+                                    <action selector="magnetUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfi-85-Zgq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vc-h9-20J">
-                                <rect key="frame" x="209" y="202" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VID-qr-uCM">
+                                <rect key="frame" x="64" y="200.5" width="106" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="ON" backgroundImage="tm9debwp5f301">
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Left" backgroundImage="arrow.left.circle.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                 </state>
                                 <connections>
-                                    <action selector="LightOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ami-qr-Yjc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-Nw-gOk">
-                                <rect key="frame" x="70" y="68" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="Hu3-I5-KTw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ryk-iZ-XjT"/>
+                                    <action selector="rotateCraneLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWd-Nr-BHe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPT-k3-0QL">
                                 <rect key="frame" x="76" y="570" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Magnet On"/>
+                                <state key="normal" title="Magnet On">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="magnetOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vzf-rn-cEY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgq-kn-icj">
                                 <rect key="frame" x="252" y="570" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Magnet Off"/>
+                                <state key="normal" title="Magnet Off">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="magnetOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCo-pf-l0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vc-h9-20J">
+                                <rect key="frame" x="252" y="203" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Right" backgroundImage="arrow.right.circle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateCraneRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vzb-eD-eY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVL-dq-W4i">
+                                <rect key="frame" x="157" y="312" width="100" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Cranedown" backgroundImage="arrow.down.circle.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="magnetDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJJ-vx-78I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-Nw-gOk">
+                                <rect key="frame" x="64" y="68" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hu3-I5-KTw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ryk-iZ-XjT"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -81,39 +101,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1041" y="-497"/>
-        </scene>
-        <!--Bluetooth View Controller-->
-        <scene sceneID="cRa-4u-H4K">
-            <objects>
-                <viewController id="i64-9R-Szn" customClass="BluetoothViewController" customModule="Tower_Crane_Bluetooth_APP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xcs-Jc-rbh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-9w-L6i">
-                                <rect key="frame" x="100" y="178" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="Hu3-I5-KTw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="NRE-c7-cxA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLt-2T-R2a">
-                                <rect key="frame" x="59" y="304" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Connect Bluetooth"/>
-                                <connections>
-                                    <action selector="connectBluetoothButton:" destination="i64-9R-Szn" eventType="touchUpInside" id="a4H-Ez-OqG"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="CII-mH-clr"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lTV-wn-6ou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1099" y="329"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="eJu-so-BU7">
@@ -123,35 +110,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHQ-gp-jXo">
-                                <rect key="frame" x="138" y="166" width="55" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHQ-gp-jXo">
+                                <rect key="frame" x="20" y="127" width="223" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Manual Control"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <state key="normal" title="Manual Controller">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JRy-iX-IJc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJd-85-MQK">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJd-85-MQK">
+                                <rect key="frame" x="157" y="571" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="qeg-kG-6Sz"/>
                                     <constraint firstAttribute="width" constant="100" id="qvm-a9-FlI"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="bluetoothIcon"/>
                                 <connections>
-                                    <segue destination="i64-9R-Szn" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="2BR-zo-zze"/>
+                                    <action selector="connectBluetooth:" destination="Hu3-I5-KTw" eventType="touchUpInside" id="vq3-uP-CEi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2E-JJ-aP0">
-                                <rect key="frame" x="76" y="282" width="115" height="30"/>
+                                <rect key="frame" x="20" y="221" width="223" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Simulator Button"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <state key="normal" title="Crane Automation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Md4-VA-nmv" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8F6-9D-kFb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BT Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-MH-ZZt">
+                                <rect key="frame" x="20" y="367" width="130" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disconnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTZ-HZ-LgC">
+                                <rect key="frame" x="158" y="367" width="166" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect To Crane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSb-zU-gGa">
+                                <rect key="frame" x="96" y="528" width="222" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eJd-85-MQK" firstAttribute="centerY" secondItem="Ic4-g1-7qk" secondAttribute="centerY" id="AdW-XW-jaw"/>
                             <constraint firstItem="eJd-85-MQK" firstAttribute="centerX" secondItem="Ic4-g1-7qk" secondAttribute="centerX" id="Jb3-ME-jKr"/>
@@ -160,6 +174,8 @@
                         <viewLayoutGuide key="safeArea" id="Pef-bg-HYZ"/>
                     </view>
                     <connections>
+                        <outlet property="SimulatorButton" destination="G2E-JJ-aP0" id="1bh-oh-ySx"/>
+                        <outlet property="connectionLabel" destination="rTZ-HZ-LgC" id="qrf-8O-qbE"/>
                         <outlet property="manualControlButton" destination="AHQ-gp-jXo" id="6f6-Ud-ox3"/>
                     </connections>
                 </viewController>
@@ -175,20 +191,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqf-yM-fBu">
-                                <rect key="frame" x="64" y="128" width="34" height="30"/>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKa-7F-8S5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqf-yM-fBu">
+                                <rect key="frame" x="58" y="71" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="Hu3-I5-KTw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="jSE-PU-Vgf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-yi-F9Y">
+                                <rect key="frame" x="22.666666666666657" y="109" width="368.66666666666674" height="24.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Crane Operation in Progress">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvH-Ww-gsC">
+                                <rect key="frame" x="135.66666666666666" y="198.66666666666666" width="142.99999999999997" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Magnet Off">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njX-2V-15S">
+                                <rect key="frame" x="111" y="153.66666666666666" width="192" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rotating Right!">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="njX-2V-15S" firstAttribute="top" secondItem="fhp-yi-F9Y" secondAttribute="bottom" constant="20" id="4g2-KC-2mC"/>
+                            <constraint firstItem="nvH-Ww-gsC" firstAttribute="top" secondItem="njX-2V-15S" secondAttribute="bottom" constant="20" id="OnO-Ky-HUx"/>
+                            <constraint firstItem="fhp-yi-F9Y" firstAttribute="top" secondItem="CWJ-pz-vwL" secondAttribute="top" constant="65" id="VrK-cr-Jpy"/>
+                            <constraint firstItem="nvH-Ww-gsC" firstAttribute="centerX" secondItem="XOs-PR-iPA" secondAttribute="centerX" id="ZzG-9h-Qbu"/>
+                            <constraint firstItem="fhp-yi-F9Y" firstAttribute="centerX" secondItem="XOs-PR-iPA" secondAttribute="centerX" id="btL-PS-g2r"/>
+                            <constraint firstItem="njX-2V-15S" firstAttribute="centerX" secondItem="XOs-PR-iPA" secondAttribute="centerX" id="nXq-Xs-g5W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CWJ-pz-vwL"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="Lqf-yM-fBu" id="wRd-kK-zAF"/>
+                        <outlet property="currentStep" destination="njX-2V-15S" id="1YB-1D-g4H"/>
+                        <outlet property="magnet" destination="nvH-Ww-gsC" id="zcx-NW-QJI"/>
+                        <outlet property="simulationView" destination="RKa-7F-8S5" id="CBB-v8-l98"/>
+                        <outlet property="statusLabel" destination="fhp-yi-F9Y" id="BHt-FZ-3ZY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9Z-lZ-p5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -197,13 +270,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.down.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="arrow.left.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="arrow.right.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="arrow.up.circle.fill" catalog="system" width="64" height="60"/>
         <image name="bluetoothIcon" width="949" height="707"/>
-        <image name="tm9debwp5f301" width="600" height="457"/>
-        <image name="tm9debwp5f301-1" width="228.5" height="300"/>
-        <image name="tm9debwp5f301-2" width="600" height="457"/>
-        <image name="tm9debwp5f301-3" width="457" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jSE-PU-Vgf"/>
+        <segue reference="ryk-iZ-XjT"/>
     </inferredMetricsTieBreakers>
 </document>
