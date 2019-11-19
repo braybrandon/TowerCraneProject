@@ -54,7 +54,7 @@ class MainViewController: UIViewController, BluetoothDelegate {
         {
             let vc = segue.destination as? Simulator
             vc?.bluetooth = bluetooth
-            let string = "a"
+            let string = "6"
             let data = string.data(using: String.Encoding.utf8)!
             print(data)
             bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)

@@ -31,6 +31,23 @@ class Simulator: UIViewController, CBPeripheralDelegate, SCNSceneRendererDelegat
         
     }
     
+    @IBAction func stopButton(_ sender: UIButton) {
+        
+        let string = "7"
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+        statusLabel.text = "Crane Stopped"
+    }
+    
+    @IBAction func resumeButton(_ sender: Any) {
+        let string = "8"
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        bluetooth.connectedPeripheral.writeValue(data, for: bluetooth.writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+        statusLabel.text = "Crane in Operation"
+    }
+    
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteric: CBCharacteristic, error: Error?) {
         let data = characteric.value
         let str = String(decoding: data!, as: UTF8.self)
@@ -54,6 +71,7 @@ class Simulator: UIViewController, CBPeripheralDelegate, SCNSceneRendererDelegat
             magnet.text = "Magnet ON!"
             break
         default:
+            magnet.text = "Magnet OFF"
             break
         }
     }
