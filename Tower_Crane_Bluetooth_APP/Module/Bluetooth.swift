@@ -31,15 +31,21 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
     
+    // function that takes in a string and converts it to a utf8 data structure and sends to the peripheral device
+    func sendData(string: String) {
+        let data = string.data(using: String.Encoding.utf8)!
+        print(data)
+        connectedPeripheral.writeValue(data, for: writeCharacteristics, type: CBCharacteristicWriteType.withoutResponse)
+        
+    }
+    
+    // method that starts the scan for  bluetooth decvices
     func scanForBLEDevice() {
         print("Scanning for devices")
         centralManager.scanForPeripherals(withServices: [CBUUID(string: BLUE_HOME_SERVICE)], options: nil)
     }
     
-    @IBAction func connectBluetoothButton(_ sender: UIButton) {
-        scanForBLEDevice()
-    }
-    
+    // func that is called by the centrall manager delegate whenever the central manager discovers the peripheral it was looking for.
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         if(peripheral.name != nil) {
             print("Found Peripheral name = \(peripheral.name!)")
@@ -51,9 +57,12 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         //Save a reference to the peripheral
         connectedPeripheral = peripheral
         centralManager.stopScan()
+        
+        //calls the connect method of centralManager to connect to the peripheral
         centralManager.connect(connectedPeripheral, options: nil)
     }
     
+    //func that is called by the central manager delegate whenever the centrall magager succesfully connects to a peripheral device.
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("Connected to the device!")
         
@@ -62,12 +71,16 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         connectedPeripheral.discoverServices(nil)
     }
     
+    // func that is called by the peripheral delegate whenever it discovers services for the peripheral
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         print("Service count = \(String(describing: peripheral.services?.count))")
         
+        //itterates through all the services for the peripheral
         for service in peripheral.services! {
             print("Service = \(service)")
             let aService = service as CBService
+            
+            //checks the service to see if the service is the service the phone is looking for
             if service.uuid == CBUUID(string: BLUE_HOME_SERVICE) {
                 
                 //Discover characteristics for our service

@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B30B12572383820A00D21B01 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B12562383820A00D21B01 /* Bluetooth.swift */; };
 		B30B12592383967F00D21B01 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B12582383967F00D21B01 /* BluetoothDelegate.swift */; };
-		B32FF03C2378B42B005498FA /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B32FF03B2378B42B005498FA /* art.scnassets */; };
 		B3775687235BF939001F3BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3775686235BF939001F3BCD /* AppDelegate.swift */; };
 		B3775689235BF939001F3BCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3775688235BF939001F3BCD /* SceneDelegate.swift */; };
 		B377568B235BF939001F3BCD /* ManualControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B377568A235BF939001F3BCD /* ManualControlViewController.swift */; };
 		B377568E235BF939001F3BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B377568C235BF939001F3BCD /* Main.storyboard */; };
-		B3775690235BF93A001F3BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B377568F235BF93A001F3BCD /* Assets.xcassets */; };
 		B3775693235BF93A001F3BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3775691235BF93A001F3BCD /* LaunchScreen.storyboard */; };
+		B39AD0ED238709B7000834E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39AD0EC238709B7000834E5 /* Images.xcassets */; };
+		B39AD0EF238709CB000834E5 /* 3D.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B39AD0EE238709CB000834E5 /* 3D.scnassets */; };
+		B39AD0F123870A72000834E5 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B39AD0F023870A72000834E5 /* info.plist */; };
 		B3DBEB5523787A490048EEEC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBEB5423787A490048EEEC /* MainViewController.swift */; };
 		B3DBEB5723788B880048EEEC /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DBEB5623788B880048EEEC /* Simulator.swift */; };
 /* End PBXBuildFile section */
@@ -23,15 +24,15 @@
 /* Begin PBXFileReference section */
 		B30B12562383820A00D21B01 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 		B30B12582383967F00D21B01 /* BluetoothDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
-		B32FF03B2378B42B005498FA /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B3775683235BF939001F3BCD /* Tower_Crane_Bluetooth_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tower_Crane_Bluetooth_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3775686235BF939001F3BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3775688235BF939001F3BCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B377568A235BF939001F3BCD /* ManualControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualControlViewController.swift; sourceTree = "<group>"; };
 		B377568D235BF939001F3BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B377568F235BF93A001F3BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3775692235BF93A001F3BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B3775694235BF93A001F3BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39AD0EC238709B7000834E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B39AD0EE238709CB000834E5 /* 3D.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = 3D.scnassets; sourceTree = "<group>"; };
+		B39AD0F023870A72000834E5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		B3DBEB5423787A490048EEEC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B3DBEB5623788B880048EEEC /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +48,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B30B125A2387051800D21B01 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B30B12562383820A00D21B01 /* Bluetooth.swift */,
+				B30B12582383967F00D21B01 /* BluetoothDelegate.swift */,
+				B3775686235BF939001F3BCD /* AppDelegate.swift */,
+				B3775688235BF939001F3BCD /* SceneDelegate.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B30B125B2387053900D21B01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3DBEB5623788B880048EEEC /* Simulator.swift */,
+				B377568A235BF939001F3BCD /* ManualControlViewController.swift */,
+				B3DBEB5423787A490048EEEC /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B377567A235BF939001F3BCD = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +88,13 @@
 		B3775685235BF939001F3BCD /* Tower_Crane_Bluetooth_APP */ = {
 			isa = PBXGroup;
 			children = (
-				B3775686235BF939001F3BCD /* AppDelegate.swift */,
-				B3DBEB5623788B880048EEEC /* Simulator.swift */,
-				B3775688235BF939001F3BCD /* SceneDelegate.swift */,
-				B377568A235BF939001F3BCD /* ManualControlViewController.swift */,
-				B3DBEB5423787A490048EEEC /* MainViewController.swift */,
 				B377568C235BF939001F3BCD /* Main.storyboard */,
-				B30B12562383820A00D21B01 /* Bluetooth.swift */,
-				B377568F235BF93A001F3BCD /* Assets.xcassets */,
 				B3775691235BF93A001F3BCD /* LaunchScreen.storyboard */,
-				B3775694235BF93A001F3BCD /* Info.plist */,
-				B32FF03B2378B42B005498FA /* art.scnassets */,
-				B30B12582383967F00D21B01 /* BluetoothDelegate.swift */,
+				B39AD0EE238709CB000834E5 /* 3D.scnassets */,
+				B39AD0EC238709B7000834E5 /* Images.xcassets */,
+				B39AD0F023870A72000834E5 /* info.plist */,
+				B30B125A2387051800D21B01 /* Module */,
+				B30B125B2387053900D21B01 /* Controller */,
 			);
 			path = Tower_Crane_Bluetooth_APP;
 			sourceTree = "<group>";
@@ -140,9 +157,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B32FF03C2378B42B005498FA /* art.scnassets in Resources */,
+				B39AD0F123870A72000834E5 /* info.plist in Resources */,
+				B39AD0EF238709CB000834E5 /* 3D.scnassets in Resources */,
+				B39AD0ED238709B7000834E5 /* Images.xcassets in Resources */,
 				B3775693235BF93A001F3BCD /* LaunchScreen.storyboard in Resources */,
-				B3775690235BF93A001F3BCD /* Assets.xcassets in Resources */,
 				B377568E235BF939001F3BCD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

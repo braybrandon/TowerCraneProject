@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Create the bluetooth delegate to call a function whenever the bluetooth is connected to a peripheral device
 protocol BluetoothDelegate {
     func bluetoothConnected(_ connected: Bool)
 }
